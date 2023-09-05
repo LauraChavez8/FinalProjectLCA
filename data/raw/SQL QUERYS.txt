@@ -1,0 +1,20 @@
+SQL QUERYS
+
+EXPLORACIÓN
+
+SELECT account__id, customer__id, customer_status_final, create_write_off_movements_date
+FROM `nu-mx-data.dataset.credit_card_days_late_timeline` 
+WHERE create_write_off_movements_date IS NOT NULL
+AND entry__post_date = '2023-06-30'
+
+SELECT COUNT(*)
+FROM `nu-mx-data.dataset.credit_card_days_late_timeline` 
+WHERE create_write_off_movements_date IS NOT NULL
+AND entry__post_date = '2023-06-30'
+
+EXTRACCIÓN
+
+SELECT account__id, customer__id, customer_status_final, create_write_off_movements_date
+FROM `nu-mx-data.dataset.credit_card_days_late_timeline` 
+WHERE create_write_off_movements_date IS NOT NULL
+AND entry__post_date = '2023-06-30'
